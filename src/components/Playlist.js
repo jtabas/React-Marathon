@@ -9,7 +9,7 @@ class Playlist extends React.Component {
   render() {
 
     return(
-      <li>
+      <li className = {this.props.className} onClick={this.props.handlePlaylistClick}>
         {this.props.name}
       </li>
 

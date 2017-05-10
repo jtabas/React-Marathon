@@ -8,7 +8,7 @@ class Song extends React.Component {
 
   render() {
     return(
-      <li className={this.props.className} >
+      <li className={this.props.className} onClick={this.props.handleSongClick}>
         {this.props.song.name}-{this.props.song.artist}
       </li>
 
